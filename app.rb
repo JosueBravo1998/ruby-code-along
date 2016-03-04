@@ -10,6 +10,7 @@ class App < Sinatra::Base
   post '/' do
     @user = {
       name: "#{params["fname"]} #{params["lname"]}",
+     
       profile_pic_url: "#{params["picurl"]}"
       }
        erb :dashboard
