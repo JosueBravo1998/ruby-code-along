@@ -4,17 +4,17 @@ class App < Sinatra::Base
   
   get '/' do
     erb :index
-    '<h1> Josue is the best </h>'cd
+    
   end
 
   post '/' do
     @user = {
-      name: "#{params["fname""]}"
-      }"
-  
+      name: "#{params["fname"]} #{params["lname"]}",
+      profile_pic_url: "#{params["picurl"]}"
+      }
+       erb :dashboard
+   end
  
-erb:results
-    erb:index
-  end   
+ 
 
 end
