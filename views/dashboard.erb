@@ -126,7 +126,8 @@
                     </ul>
                 </div>
                 <div class="media block"> <!-- MEDIA (LEFT-CONTAINER) -->
-                    <div id="media-display">
+                    <div id="media-display"> 
+                    
                         <a class="media-btn play" href="#23"><span class="fontawesome-play"></span></a>
                     </div>
                     <div class="media-control-bar">
@@ -207,10 +208,10 @@
                     </ul>
                 </div>
                 <div class="tweets block"> <!-- TWEETS (MIDDLE-CONTAINER) -->
-                    <h2 class="titular"><span class="icon zocial-twitter"></span>LATEST TWEETS</h2>
+                    <h2 class="titular"><span class="icon zocial-twitter"></span>MY TWEETS</h2>
                     <div class="tweet first">
-                        <p>Ice-cream trucks only play music when out of ice-cream. Well played dad. On <a class="tweet-link" href="#17">@Quora</a></p>
-                        <p><a class="time-ago scnd-font-color" href="#18">3 minutes ago</a></p>
+                        <p> <%= @user[:tweet] %> <a class="tweet-link" href="#17">@Twitter</a></p>
+                        <p><a class="time-ago scnd-font-color" href="#18">1 sec ago</a></p>
                     </div>
                     <div class="tweet">
                         <p>We are in the process of pushing out all of the new CC apps! We will tweet again once they are live <a class="tweet-link" href="#19">#CreativeCloud</a></p>
@@ -241,7 +242,7 @@
                         <div class="input-icon envelope-icon-acount"><span class="fontawesome-envelope scnd-font-color"></span></div>
                     </div>
                     <div class="input-container">
-                        <input type="text" placeholder="Password" class="password text-input">
+                        <input type="password" placeholder="Password" class="password text-input">
                         <div class="input-icon password-icon"><span class="fontawesome-lock scnd-font-color"></span></div>
                     </div>
                     <a class="sign-in button" href="#22">SIGN IN</a>
@@ -261,7 +262,7 @@
                 <div class="calendar-day block"> <!-- CALENDAR DAY (RIGHT-CONTAINER) -->
                     <div class="arrow-btn-container">
                         <a class="arrow-btn left" href="#200"><span class="icon fontawesome-angle-left"></span></a>
-                        <h2 class="titular">WEDNESDAY</h2>
+                        <h2 class="titular"><%= @user[:current_date] %></h2>
                         <a class="arrow-btn right" href="#201"><span class="icon fontawesome-angle-right"></span></a>
                     </div>
                         <p class="the-day">26</p>
@@ -270,7 +271,7 @@
                 <div class="calendar-month block"> <!-- CALENDAR MONTH (RIGHT-CONTAINER) -->
                     <div class="arrow-btn-container">
                         <a class="arrow-btn left" href="#202"><span class="icon fontawesome-angle-left"></span></a>
-                        <h2 class="titular">APRIL 2013</h2>
+                        <h2 class="titular"><%= @user[:month_and_date] %> </h2>
                         <a class="arrow-btn right" href="#203"><span class="icon fontawesome-angle-right"></span></a>
                     </div>
                     <table class="calendar">

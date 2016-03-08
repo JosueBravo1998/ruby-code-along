@@ -109,7 +109,7 @@ h1, h2, p, a, span{
 		border: solid 1px #1f253d;
 		border-radius: 5px;		
 	}
-		input[type=text]::-webkit-input-placeholder { /* WebKit browsers */
+		input[text=text]::-webkit-input-placeholder { /* WebKit browsers */
 	   		color: #fff;	   		
 	   	}
 		input[type=text]:-moz-input-placeholder { /* Mozilla Firefox 4 to 18 */
@@ -358,8 +358,8 @@ h1, h2, p, a, span{
 					transition: background .2s;
 				}
 					.menu-box-tab:hover {
-						background: #50597b;
-						border-top: 1px solid #1f253d;
+						background: #ff0000;
+						border-top: 1px solid #ff0000;
 						text-decoration: none;
 					}
 					.menu-box-tab:hover .icon {
